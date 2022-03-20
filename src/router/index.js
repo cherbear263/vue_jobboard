@@ -25,7 +25,9 @@ const routes = [
   {
     path: '/jobs/:id',
     name: 'JobDetails',
-    component: JobDetails
+    component: JobDetails,
+    // accept any route parameters as props
+    props: true
   }
 ]
 
