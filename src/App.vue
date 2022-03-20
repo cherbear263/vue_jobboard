@@ -1,7 +1,9 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <!-- data-binding to the name is safer in case you make changes down the track -->
+    <router-link :to="{ name: 'Home' }">Home</router-link> |
+    <router-link :to="{ name: 'About' }">About</router-link> |
+    <router-link :to="{ name: 'Jobs' }">Jobs</router-link>
   </nav>
   <router-view/>
 </template>
